@@ -7,34 +7,63 @@
 main{
     display: grid;
     grid-template-columns: 1.2fr 1fr 1fr;
-    min-height: 100%;
-}
-.panel{
-    display: grid;
-    grid-template-columns: 1fr;
+    min-height: 100vh;
 }
 
-/* welcome panel */
-.panel.welcome{
+
+/* welcome */
+.welcome{
+    
+    display: grid;
+    grid-template-columns: 1fr;
     background-color: #323230;
     padding: 30px 60px;
     grid-auto-rows: 1fr;
 }
-.panel.welcome nav a{
+.welcome nav a{
     text-decoration: none;
     color: #a8a8a8;
-    margin-right: 16px;
+    margin-right: 20px;
 }
-.panel.welcome div h1{
-    font-size: xx-large;
-    color: #eeeee7;
+.welcome div h1{
+  font-size: xx-large;
+  color: #eeeee7;
 }
-.panel.welcome  p{
-    max-width: 540px;
-    color: #a8a8a8;
-    margin-top: 16px;
+.welcome  p{
+   color: #a8a8a8;
+   margin-top: 20px;
+   max-width: 540px;
 }
-.panel.welcome footer{
-    color: #a8a8a8;
+.welcome footer{
     align-self: end;
+}
+
+/* about */
+.about{
+    
+    display: grid;
+    grid-template-columns: 1fr;
+   background-color: #a8a8a8;
+   grid-template-rows: 3fr 1fr;
+   overflow: hidden;
+}
+.about img{
+    min-width: 100%;
+    max-height: 575px;
+}
+ .text{
+    padding: 30px 60px;
+} 
+
+/* photos */
+.photos{
+    
+    display: grid;
+    grid-template-columns: 1fr;
+   grid-template-rows: 1fr 3fr;
+   overflow: hidden;
+}
+.photos img{
+  width: 100%;
+  max-height: 575px;
 }
